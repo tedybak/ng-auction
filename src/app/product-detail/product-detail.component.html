@@ -1,0 +1,21 @@
+ <h4>Product Detaills form : {{route_id}}</h4>
+<a [routerLink]="['./seller', 1234]">Seller Info</a>
+
+<div class="thumbnail">
+    <img src="http://placehold.it/820x320">
+    <div>
+      <h4 class="float-right">{{
+          product.price }}</h4>
+          <h4>{{ product.title }}</h4>
+          <p>{{ product.description }}</p>
+        </div>
+       <!-- <div class="ratings">
+          <p><nga-stars [rating]="product.rating"></nga-stars></p>
+        </div> -->
+     </div>
+
+ <router-outlet></router-outlet>
+
+
+
+
