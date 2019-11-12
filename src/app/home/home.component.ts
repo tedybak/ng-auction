@@ -8,7 +8,7 @@ import { ProductService, Product} from '../shared/product.service';
 })
 export class HomeComponent implements OnInit {
 
-  products:Product[] = [];
+  products: Product[] = [];
   constructor(private productService: ProductService) {
 
    }

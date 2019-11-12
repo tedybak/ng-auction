@@ -19,11 +19,6 @@ export class ProductDetailComponent implements OnInit {
     this.route_id = parseInt(this.router.snapshot.paramMap.get('id'));
 
     this.product = this.productService.getProductById(this.route_id);
-
-
-
-
-
    }
 
 }

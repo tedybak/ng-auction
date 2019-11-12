@@ -7,10 +7,14 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class StarsComponent implements OnInit {
 
-  @Input() rating;
+  @Input() count = 5;
+  @Input() rating = 0;
+  stars: boolean[] = [];
   constructor() { }
-
-  ngOnInit() {
-  }
-
+ ngOnInit() {
+    for (let i = 1; i <= this.count; i++) {
+     this.stars.push(i > this.rating); // push true or false
+   }
+ }
 }
+
